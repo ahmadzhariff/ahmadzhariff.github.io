@@ -79,7 +79,6 @@ hr {
   font-weight: bold;
   display: -moz-inline-stack;
   display: inline-block;
-  zoom: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 20px;
@@ -91,7 +90,6 @@ hr {
 .logo > span {
   display: -moz-inline-stack;
   display: inline-block;
-  zoom: 1;
   float: left;
   border: 2px solid #fff;
   padding: 7px 10px 7px 12px;
@@ -379,7 +377,7 @@ button.trigger {
 	border: none;
 	background: transparent;
 	color: transparent;
-	font-size: 2em;
+	font-size: 3em;
 	cursor: pointer;
 }
 
@@ -392,6 +390,19 @@ button.trigger {
 	opacity: 0;
 	-webkit-transition-delay: 0s;
 	transition-delay: 0s;
+}
+
+button.trigger::before {
+	position: absolute;
+	bottom: 100%;
+	left: -100%;
+	padding: 0.8em;
+	width: 300%;
+	color: #fff;
+	content: attr(data-info);
+	font-size: 0.35em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
 button.trigger:focus {
