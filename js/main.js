@@ -72,7 +72,7 @@
     isRevealed,
     noscroll,
     isAnimating,
-    container = document.getElementById( 'container' ),
+    container = document.getElementById( 'cross-portfolio' ),
     trigger = container.querySelector( 'button.trigger' );
 
   function scrollY() {
@@ -177,9 +177,6 @@
           }, parseInt($this.data('timeout'),10));
         } else {
           $this.addClass('animated ' + $this.data('animation'));
-          $('.progress .progress-bar').progressbar({
-            transition_delay: 5000
-          });
         }
       }
     });
