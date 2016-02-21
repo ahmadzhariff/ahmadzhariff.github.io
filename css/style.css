@@ -697,9 +697,9 @@ body.modal-open .cross-portfolio {
 	float: left;
 	overflow: hidden;
 	margin: 10px 1%;
-	min-width: 320px;
-	max-width: 480px;
-	max-height: 360px;
+
+	max-width: 100%;
+	max-height: 100%;
 	width: 48%;
 	background: #3085a3;
 	text-align: center;
@@ -824,7 +824,7 @@ figure.cross-image:hover p {
  }
 }
 @media screen and (max-width: 50em) {
-	.cross-title, .content {
+	.cross-title, .cross-portfolio {
 		font-size: 90%;
 	}
 
@@ -851,4 +851,19 @@ figure.cross-image:hover p {
 	 width: 100%;
  }
 
+}
+
+@media screen and (max-width: 27em) {
+	.cross-portfolio {
+		font-size: 72%;
+	}
+	.cross-portfolio h2{
+		font-size: 28px;
+	}
+	.cross-portfolio h3{
+		font-size: 24px;
+	}
+	.cross-portfolio h4{
+		font-size: 18px;
+	}
 }
