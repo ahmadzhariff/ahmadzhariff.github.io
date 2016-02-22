@@ -2,7 +2,7 @@
   //preloader
   $(window).load(function() {
 
-		$('#preloader').delay(5000).slideUp('slow');
+		$('#preloader').delay(1300).slideUp('slow');
 
 	});
   // detect if IE : from http://stackoverflow.com/a/16657946
