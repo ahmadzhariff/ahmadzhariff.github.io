@@ -6,11 +6,14 @@ html, body, .cross-portfolio, .bg {
 
 body {
 	background: #fff;
-	color: #69606b;
-	font-weight: 400;
-	font-size: 15px;
-	line-height: 1.5;
-  font-family: 'Raleway', Arial, sans-serif;
+		color: #69606b;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.5;
+		font-family: 'Raleway', Arial, sans-serif;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		overflow-x: hidden;
 }
 
 a {
@@ -255,8 +258,6 @@ hr {
 .cross-portfolio section.content:nth-child(odd) {
 	opacity: 0;
 	background: #F5F5F5;
-	-webkit-transform: translateX(100%);
-	transform: translateX(100%);
 }
 
 .cross-portfolio .content .containers {
