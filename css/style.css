@@ -2,6 +2,7 @@
 
 html, body, .cross-portfolio, .bg {
 	height: 100%;
+	margin: 0;
 }
 
 body {
@@ -45,11 +46,6 @@ ul.icon li.phone:before { content: "\f095"; }
 ul.icon li.location:before { content: "\f124"; }
 
 hr {
-  -moz-border-bottom-colors: none;
-  -moz-border-image: none;
-  -moz-border-left-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-top-colors: none;
   margin: 18px 0;
 	background-color: transparent;
 	border-top: 2px dashed #8c8b8b;
@@ -75,7 +71,7 @@ hr {
 }
 
 .big-title {
-	z-index: 1000;
+
 		margin: 0 auto;
 		padding: 0 1.25em 10em 1.25em;
 		width: 100%;
@@ -142,13 +138,13 @@ hr {
 
 /*intro portfolio start*/
 .cross-portfolio:not(.notrans) .bg-img::before,
-.cross-portfolio section.content:nth-child(odd) {
+.cross-portfolio div.content:nth-child(odd) {
 	-webkit-transition-property: background-color;
 	transition-property: background-color;
 }
 
 .cross-portfolio:not(.notrans) .bg-img::after,
-.cross-portfolio section.content:nth-child(odd) {
+.cross-portfolio div.content:nth-child(odd) {
 	-webkit-transition-property: -webkit-transform;
 	transition-property: transform;
 }
@@ -161,7 +157,7 @@ hr {
 .cross-portfolio:not(.notrans) .bg-img::before,
 .cross-portfolio:not(.notrans) .bg-img::after,
 .cross-portfolio:not(.notrans) .content > div,
-.cross-portfolio section.content:nth-child(odd){
+.cross-portfolio div.content:nth-child(odd){
 	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 	-webkit-transition-duration: 0.5s;
@@ -216,7 +212,7 @@ hr {
 .cross-portfolio .title h1 {
 	font-family: 'Playfair Display', serif;
 	font-weight: 700;
-	font-size:-6em;
+	font-size:4em;
 }
 
 .social {
@@ -255,7 +251,7 @@ hr {
 	position:relative;
 }
 
-.cross-portfolio section.content:nth-child(odd) {
+.cross-portfolio div.content:nth-child(odd) {
 	opacity: 0;
 	background: #F5F5F5;
 }
@@ -267,7 +263,7 @@ hr {
 }
 
 .cross-portfolio.modify .content .containers,
-.cross-portfolio.modify section.content:nth-child(odd) {
+.cross-portfolio.modify div.content:nth-child(odd) {
 	opacity: 1;
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
@@ -277,14 +273,14 @@ hr {
 /* Delays */
 .cross-portfolio:not(.notrans) .bg-img::before,
 .cross-portfolio:not(.notrans) .bg-img::after,
-.cross-portfolio section.content:nth-child(odd) {
+.cross-portfolio div.content:nth-child(odd) {
 	-webkit-transition-delay: 0.3s;
 	transition-delay: 0.3s;
 }
 
 .cross-portfolio.modify:not(.notrans) .bg-img::before,
 .cross-portfolio.modify:not(.notrans) .bg-img::after,
-.cross-portfolio section.content:nth-child(odd) {
+.cross-portfolio div.content:nth-child(odd) {
 	-webkit-transition-delay: 0s;
 	transition-delay: 0s;
 }
