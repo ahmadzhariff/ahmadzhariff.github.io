@@ -98,23 +98,23 @@ hr {
   opacity: .8;
 }
 
-.cross-title {
+.title {
 	z-index: 1000;
 	margin: 0 auto;
 	width: 100%;
 	text-align: center;
-	
+	position: relative;
 	top: 50%;
 	left: 50%;
 }
 
-.cross-title h1 {
+.title h1 {
 	padding: 0 0 0.2em;
 	font-size: 3.6em;
 	margin: 0 auto;
 }
 
-.cross-title h3 {
+.title h3 {
 	color: #fff;
 	padding: 0 0 0.6em 0.15em;
 	font-weight: 300;
@@ -122,7 +122,7 @@ hr {
 	margin: 0 auto;
 }
 
-.cross-title h1 {
+.title h1 {
 	line-height: 1;
 }
 
@@ -147,7 +147,7 @@ hr {
 	transition-property: transform;
 }
 
-.cross-portfolio:not(.notrans) .cross-title h3 {
+.cross-portfolio:not(.notrans) .title h3 {
 	-webkit-transition-property: opacity;
 	transition-property: opacity;
 }
@@ -159,7 +159,7 @@ hr {
 
 .cross-portfolio:not(.notrans) .bg-img::before,
 .cross-portfolio:not(.notrans) .bg-img::after,
-.cross-portfolio:not(.notrans) .cross-title h3,
+.cross-portfolio:not(.notrans) .title h3,
 .cross-portfolio:not(.notrans) .content > div {
 	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
@@ -212,7 +212,7 @@ hr {
 	background-color: rgba(75, 62, 97, 0.4);
 }
 
-.cross-portfolio .cross-title {
+.cross-portfolio .title {
 	position: relative;
 	top: auto;
 	left: auto;
@@ -222,12 +222,12 @@ hr {
 	transform: translateY(200px);
 }
 
-.cross-portfolio.modify .cross-title {
+.cross-portfolio.modify .title {
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
 }
 
-.cross-portfolio .cross-title h1 {
+.cross-portfolio .title h1 {
 	font-family: 'Playfair Display', serif;
 	font-weight: 700;
 	color: #fff;
@@ -261,10 +261,10 @@ hr {
 .profile-widget {
 	margin-bottom: 40px;
 }
-.cross-portfolio.modify .cross-title h3 {
+.cross-portfolio.modify .title h3 {
   color: inherit;
 }
-.cross-portfolio.modify .cross-title h1 {
+.cross-portfolio.modify .title h1 {
   color: inherit;
 }
 .cross-portfolio.modify .cross-top a {
@@ -293,14 +293,14 @@ hr {
 
 
 /* Delays */
-.cross-portfolio:not(.notrans) .cross-title,
+.cross-portfolio:not(.notrans) .title,
 .cross-portfolio:not(.notrans) .bg-img::before,
 .cross-portfolio:not(.notrans) .bg-img::after {
 	-webkit-transition-delay: 0.3s;
 	transition-delay: 0.3s;
 }
 
-.cross-portfolio.modify:not(.notrans) .cross-title,
+.cross-portfolio.modify:not(.notrans) .title,
 .cross-portfolio.modify:not(.notrans) .bg-img::before,
 .cross-portfolio.modify:not(.notrans) .bg-img::after {
 	-webkit-transition-delay: 0s;
@@ -349,7 +349,7 @@ hr {
 	padding: 0 1.25em;
   margin: 0 auto 1.5em 0.8em;
 }
-.cross-title{
+.title{
   margin: -80px auto 0;
   margin: 0 auto 1.5em 0.8em;
 }
@@ -926,7 +926,7 @@ figure.cross-image:hover p {
  }
 }
 @media screen and (max-width: 50em) {
-	.cross-title, .cross-portfolio {
+	.title, .cross-portfolio {
 		font-size: 90%;
 	}
 
@@ -967,6 +967,10 @@ figure.cross-image:hover p {
 	}
 	.cross-portfolio h4{
 		font-size: 18px;
+	}
+	.cross-portfolio .title{
+		margin-top: -3em;
+
 	}
 
 }
