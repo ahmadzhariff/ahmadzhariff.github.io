@@ -71,12 +71,11 @@ hr {
 }
 
 .big-title {
-
 		margin: 0 auto;
 		padding: 0 1.25em 10em 1.25em;
 		width: 100%;
 		text-align: center;
-		position: absolute;
+		position: fixed;
 		top: 50%;
 		left: 50%;
 		-webkit-transform: translateX(-50%) translateY(-50%);
@@ -97,8 +96,24 @@ hr {
 	padding: 0 0 0.6em;
 	font-weight: 300;
 	font-size: 2.25em;
-
 	margin: 0 auto;
+}
+
+.cross-portfolio .big-title {
+	-webkit-transition: opacity 0.2s ease-in;
+	-moz-transition: opacity 0.2s ease-in;
+	-o-transition: opacity 0.2s ease-in;
+	-ms-transition: opacity 0.2s ease-in;
+	transition: opacity 0.2s ease-in;
+}
+
+.cross-portfolio.modify .big-title {
+	opacity: 0;
+	-webkit-transition: opacity 0.2s ease-out;
+	-moz-transition: opacity 0.2s ease-out;
+	-o-transition: opacity 0.2s ease-out;
+	-ms-transition: opacity 0.2s ease-out;
+	transition: opacity 0.2s ease-out;
 }
 
 .logo {
@@ -362,14 +377,12 @@ button.trigger {
 	cursor: pointer;
 }
 
-.cross-portfolio:not(.notrans) button.trigger,
-.cross-portfolio .big-title {
+.cross-portfolio:not(.notrans) button.trigger{
 	-webkit-transition: opacity 0.3s 0.5s;
 	transition: opacity 0.3s 0.5s;
 }
 
-.cross-portfolio.modify:not(.notrans) button.trigger,
-.cross-portfolio.modify .big-title{
+.cross-portfolio.modify:not(.notrans) button.trigger{
 	opacity: 0;
 	-webkit-transition-delay: 0s;
 	transition-delay: 0s;
