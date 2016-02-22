@@ -11,18 +11,17 @@
 
 		<link rel="shortcut icon" href="img/favicon.ico"/>
 		<!-- Bootstrap -->
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" media="screen"/>
 		<!-- Animate.css -->
 		<link rel="stylesheet" href="css/animate.min.css"/>
 		<!-- Hover.css -->
 		<link rel="stylesheet" href="css/hover-min.css"/>
 		<!-- Font Awesome -->
-		<link rel="stylesheet" href="css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="css/font-awesome.min.css" media="screen"/>
 		<!-- Addon Style -->
 		<link rel="stylesheet" href="css/section-scroll.css"/>
 
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/preloader.css" />
+		<link rel="stylesheet" href="css/style.css" media="screen"/>
 		<!--[if IE]>
   		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -51,21 +50,24 @@
       			<div class="cross-top">
 							<a href="index.html" class="logo hidden-sm hidden-xs"><span>Cross.</span></a>
 						</div>
+						<div class="big-title">
+							<h1>Hi, I'm David Smith</h1>
+							<p>I'm Developer</p>
+						</div>
 						<button class="trigger hvr-hang" data-info="View Profile"><i class="fa fa-chevron-down"></i></button>
 
 		 		</header>
 
       	<section id="profile" class="content">
-					<div class="title">
-						<div class="col-lg-12 revealOnScroll" data-animation="bounceInDown">
-							<h1>David Smith</h1>
-							<h3><span class="element"></span></h3>
-						</div>
-					</div>
+
 
         	<div class="containers">
           	<div class="row">
 							<div class="col-lg-12">
+								<div class="title">
+										<h1>David Smith</h1>
+										<h4><span class="element"></span></h4>
+								</div>
 								<div class="profile-widget">
 									<h3>Profile Summary</h3>
 									<p class="text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis. Nam sem lacus, vulputate ut turpis vel, viverra porta ante. Pellentesque a ornare libero. Aenean sed ipsum a lectus volutpat dictum non non neque. Nunc sit amet felis non velit consequat venenatis id eu dui.</p>
@@ -118,7 +120,7 @@
 				</div><!-- end portfolio -->
 			</section><!-- end content -->
 
-		<section id="profile-contact" class="content dark">
+		<section id="profile-contact" class="content">
 			<div class="containers">
 				<div class="row">
 
@@ -214,7 +216,7 @@
 			</div><!-- .containers -->
 		</section>
 
-		<section id="resume" class="content gray scrollable-section" data-section-title="Resume">
+		<section id="resume" class="content scrollable-section" data-section-title="Resume">
 			<div class="containers">
 				<div class="row">
 					<div class="col-md-12 headline">
@@ -376,7 +378,7 @@
 		</div>
 	</section>
 
-		<section id="contact" class="content gray scrollable-section" data-section-title="Contact">
+		<section id="contact" class="content scrollable-section" data-section-title="Contact">
 			<div class="containers">
 				<div class="row">
 					<div class="col-md-12 headline">
@@ -412,12 +414,16 @@
 			</div>
 		</section>
 
-		<footer class="content dark">
+		<footer id="footer" class="content">
 			<div class="containers">
-				<div class="footer-logo"><a href="index.html">Cross.</a></div>
-				<p>&copy; 2016 Cross. All Rights Reserved.</p>
+				<div class="row">
+					<div class="col-md-12">
+						<p>© 2016 Cross. All Rights Reserved.</p>
+					</div>
+				</div><!-- .row -->
 			</div>
 		</footer>
+
 
 </div><!-- end cross portfolio -->
 
@@ -534,7 +540,7 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/classie.js"></script>
 	<script src="js/typed.js"></script>
-	<script src="js/smoothscroll.js"></script>
+
 	<script src="js/jquery.section-scroll.js"></script>
 	<script src="js/main.js"></script>
 <!-- end call script -->
