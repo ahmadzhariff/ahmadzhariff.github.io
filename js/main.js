@@ -2,12 +2,12 @@
   //preloader
   $(window).load(function() {
 
-		$('#preloader').delay(1300).slideUp('slow');
+    $('#preloader').delay(1300).slideUp('slow');
 
-	});
+  });
   // detect if IE : from http://stackoverflow.com/a/16657946
-  var ie = (function(){
-    var undef,rv = -1; // Return value assumes failure.
+  var ie = (function() {
+    var undef, rv = -1; // Return value assumes failure.
     var ua = window.navigator.userAgent;
     var msie = ua.indexOf('MSIE ');
     var trident = ua.indexOf('Trident/');
@@ -24,16 +24,16 @@
     return ((rv > -1) ? rv : undef);
   }());
 
-
   // disable/enable scroll (mousewheel and keys) from http://stackoverflow.com/a/4770179
   // left: 37, up: 38, right: 39, down: 40,
   // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
-  var keys = [32, 37, 38, 39, 40], wheelIter = 0;
+  var keys = [32, 37, 38, 39, 40],
+    wheelIter = 0;
 
   function preventDefault(e) {
     e = e || window.event;
     if (e.preventDefault)
-    e.preventDefault();
+      e.preventDefault();
     e.returnValue = false;
   }
 
@@ -53,7 +53,7 @@
   function wheel(e) {
     // for IE
     //if( ie ) {
-      //preventDefault(e);
+    //preventDefault(e);
     //}
   }
 
@@ -72,8 +72,8 @@
     isRevealed,
     noscroll,
     isAnimating,
-    container = document.getElementById( 'cross-portfolio' ),
-    trigger = container.querySelector( 'button.trigger' );
+    container = document.getElementById('cross-portfolio'),
+    trigger = container.querySelector('button.trigger');
 
   function scrollY() {
     return window.pageYOffset || docElem.scrollTop;
@@ -82,50 +82,48 @@
   function scrollPage() {
     scrollVal = scrollY();
 
-    if( noscroll && !ie ) {
-      if( scrollVal < 0 ) return false;
+    if (noscroll && !ie) {
+      if (scrollVal < 0) return false;
       // keep it that way
-      window.scrollTo( 0, 0 );
+      window.scrollTo(0, 0);
     }
 
-    if( classie.has( container, 'notrans' ) ) {
-      classie.remove( container, 'notrans' );
+    if (classie.has(container, 'notrans')) {
+      classie.remove(container, 'notrans');
       return false;
     }
 
-    if( isAnimating ) {
+    if (isAnimating) {
       return false;
     }
 
-    if( scrollVal <= 0 && isRevealed ) {
+    if (scrollVal <= 0 && isRevealed) {
       toggle(0);
-    }
-    else if( scrollVal > 0 && !isRevealed ){
+    } else if (scrollVal > 0 && !isRevealed) {
       toggle(1);
     }
   }
 
-  function toggle( reveal ) {
+  function toggle(reveal) {
     isAnimating = true;
 
-    if( reveal ) {
-      classie.add( container, 'modify' );
-    }
-    else {
+    if (reveal) {
+      classie.add(container, 'modify');
+    } else {
       noscroll = true;
       disable_scroll();
-      classie.remove( container, 'modify' );
+      classie.remove(container, 'modify');
     }
 
     // simulating the end of the transition:
-    setTimeout( function() {
+    setTimeout(function() {
       isRevealed = !isRevealed;
       isAnimating = false;
-      if( reveal ) {
+      if (reveal) {
         noscroll = false;
         enable_scroll();
       }
-    }, 600 );
+    }, 600);
   }
 
   // refreshing the page...
@@ -134,49 +132,62 @@
 
   disable_scroll();
 
-  if( pageScroll ) {
+  if (pageScroll) {
     isRevealed = true;
-    classie.add( container, 'notrans' );
-    classie.add( container, 'modify' );
+    classie.add(container, 'notrans');
+    classie.add(container, 'modify');
   }
 
-  window.addEventListener( 'scroll', scrollPage );
-  trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
+  window.addEventListener('scroll', scrollPage);
+  trigger.addEventListener('click', function() {
+    toggle('reveal');
+  });
 
   //typed
   $(".element").typed({
-      strings: ["I'm Hybrid Developer", "I'm UI/UX Designer", "I'm Freelancer"],
-      typeSpeed: 1,
-      backSpeed: 1,
-      backDelay: 1000,
-      loop: true
+    strings: ["I'm Hybrid Developer", "I'm UI/UX Designer", "I'm Freelancer"],
+    typeSpeed: 1,
+    backSpeed: 1,
+    backDelay: 1000,
+    loop: true
+  });
+
+  $(".sub-title").typed({
+    strings: ["Hybrid Developer", "UI/UX Designer", "Freelancer"],
+    typeSpeed: 1,
+    backSpeed: 1,
+    backDelay: 1400,
+    loop: true
   });
 
   //reveal on scrool
-  var $window           = $(window),
-      win_height_padded = $window.height() * 1.1,
-      isTouch           = Modernizr.touch;
+  var $window = $(window),
+    win_height_padded = $window.height() * 1.1,
+    isTouch = Modernizr.touch;
 
-  if (isTouch) { $('.revealOnScroll').addClass('animated'); }
+  if (isTouch) {
+    $('.revealOnScroll').addClass('animated');
+  }
 
   $window.on('scroll', revealOnScroll);
 
   function revealOnScroll() {
     var scrolled = $window.scrollTop(),
-        win_height_padded = $window.height() * 1.1;
+      win_height_padded = $window.height() * 1.1;
 
     // Showed...
-    $(".revealOnScroll:not(.animated)").each(function () {
-      var $this     = $(this),
-          offsetTop = $this.offset().top;
+    $(".revealOnScroll:not(.animated)").each(function() {
+      var $this = $(this),
+        offsetTop = $this.offset().top;
 
       if (scrolled + win_height_padded > offsetTop) {
         if ($this.data('timeout')) {
-          window.setTimeout(function(){
+          window.setTimeout(function() {
             $this.addClass('animated ' + $this.data('animation'));
-          }, parseInt($this.data('timeout'),10));
+          }, parseInt($this.data('timeout'), 10));
         } else {
           $this.addClass('animated ' + $this.data('animation'));
+          $('.count').countTo();
         }
       }
     });
@@ -184,9 +195,64 @@
 
   revealOnScroll();
 
- $('body').sectionScroll();
+  $('body').sectionScroll();
 
-//menu
+  $(".my-project").on("click", function() {
+    var $this = $(this);
+    var img, title, desc, smdesc;
 
+    if ($this.hasClass('1')) {
+
+      img = $('#img-src-1');
+      title = $("#img-title-1");
+      desc = $("#img-desc-1");
+      smdesc = $("#img-smdesc-1");
+
+    }
+    if ($this.hasClass('2')) {
+
+      img = $('#img-src-2');
+      title = $("#img-title-2");
+      desc = $("#img-desc-2");
+      smdesc = $("#img-smdesc-2");
+
+    }
+    if ($this.hasClass('3')) {
+
+      img = $('#img-src-3');
+      title = $("#img-title-3");
+      desc = $("#img-desc-3");
+      smdesc = $("#img-smdesc-3");
+
+    }
+    if ($this.hasClass('4')) {
+
+      img = $('#img-src-4');
+      title = $("#img-title-4");
+      desc = $("#img-desc-4");
+      smdesc = $("#img-smdesc-4");
+
+    }
+
+    $('#show-img').attr('src', img.attr('src'));
+    $('#show-title').text(title.text());
+    $('#show-desc-1').text(desc.text());
+    $('#show-desc-2').text(smdesc.text());
+    $('#projectModal').modal({
+      backdrop: 'static',
+      keyboard: false
+    });
+
+  });
+
+  $(".carousel-inner").owlCarousel({
+
+    navigation: false,
+    slideSpeed: 300,
+    paginationSpeed: 400,
+    singleItem: true,
+    autoPlay: 3000
+
+  });
 
 })();
