@@ -845,12 +845,6 @@ button.trigger i::before {
   height: 100%;
 }
 
-
-/* Anchor will cover the whole item by default */
-
-
-/* For some effects it will show as a button */
-
 .custom-grid figure h2 {
   word-spacing: -0.15em;
   font-weight: 300;

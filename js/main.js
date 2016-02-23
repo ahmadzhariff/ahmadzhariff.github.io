@@ -254,5 +254,10 @@
     autoPlay: 3000
 
   });
+  var is_mobile = false;
+  if (is_mobile == true) {
+            window.sr = ScrollReveal().reveal('.revealOnScroll:not(.animated)');
+      }
+
 
 })();
