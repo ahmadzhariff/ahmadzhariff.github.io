@@ -161,39 +161,16 @@
   });
 
   //reveal on scrool
-  var $window = $(window),
-    win_height_padded = $window.height() * 1.1,
-    isTouch = Modernizr.touch;
+  var waypoint = new Waypoint({
+    element: document.getElementById('count'),
+    handler: function() {
+      $('.count').countTo();
+    },
+    offset: 1000 
+  })
 
-  if (isTouch) {
-    $('.revealOnScroll').addClass('animated');
-  }
 
-  $window.on('scroll', revealOnScroll);
 
-  function revealOnScroll() {
-    var scrolled = $window.scrollTop(),
-      win_height_padded = $window.height() * 1.1;
-
-    // Showed...
-    $(".revealOnScroll:not(.animated)").each(function() {
-      var $this = $(this),
-        offsetTop = $this.offset().top;
-
-      if (scrolled + win_height_padded > offsetTop) {
-        if ($this.data('timeout')) {
-          window.setTimeout(function() {
-            $this.addClass('animated ' + $this.data('animation'));
-          }, parseInt($this.data('timeout'), 10));
-        } else {
-          $this.addClass('animated ' + $this.data('animation'));
-          $('.count').countTo();
-        }
-      }
-    });
-  }
-
-  revealOnScroll();
 
   $('body').sectionScroll();
 
@@ -254,10 +231,6 @@
     autoPlay: 3000
 
   });
-  var is_mobile = false;
-  if (is_mobile == true) {
-            window.sr = ScrollReveal().reveal('.revealOnScroll:not(.animated)');
-      }
 
 
 })();
