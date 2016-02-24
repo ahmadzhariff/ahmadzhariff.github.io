@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="css/owl.theme.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <!-- Addon Style -->
-  <link rel="stylesheet" href="css/section-scroll.css" />
+
 
   <link rel="stylesheet" href="css/style.css" media="screen" />
   <!--[if IE]>
@@ -42,12 +42,29 @@
     </div>
   </div>
 
-<!-- Navigation on scroll-->
-
 
   <div id="cross-portfolio" class="cross-portfolio">
+<!-- Navigation on scroll-->
+		<nav id="nav-icon">
+		      <span></span>
+		      <span></span>
+		      <span></span>
+		      <span></span>
+		    </nav>
 
-    <div id="intro" class="scrollable-section" data-section-title="Hi !">
+		<nav id="menu-overlay">
+
+				 <ul id="menu" class="menu-click list-unstyled">
+					 <li><a href="#profile" class="anchor-scroll">ABOUT</a></li>
+					 <li><a href="#services" class="anchor-scroll">SERVICES</a></li>
+					 <li><a href="#portfolio" class="anchor-scroll">WORK</a></li>
+					 <li><a href="#resume" class="anchor-scroll">RESUME</a></li>
+					 <li><a href="#contact" class="anchor-scroll">CONTACT</a></li>
+				 </ul>
+
+			 </nav>
+
+    <div id="intro">
 
       <div class="bg">
         <div class="bg-img">
@@ -56,12 +73,11 @@
       </div>
       <!-- top header-->
       <div class="cross-top">
-        <a href="index.html" class="logo hidden-sm hidden-xs"><span>Cross.</span></a>
+        <a href="index.html" class="logo"><span>Cross.</span></a>
       </div>
       <div class="big-title">
         <div class="text-center">
-
-          <h1>Hola, I'm David Smith</h1>
+          <h1>David Smith</h1>
           <p>I'm <span class="sub-title"></span></p>
         </div>
       </div>
@@ -80,10 +96,11 @@
               <h4><span class="element"></span></h4>
             </div>
             <div class="space">
-              <h3>Profile Summary</h3>
-              <p class="text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis. Nam sem lacus, vulputate ut turpis vel, viverra porta ante. Pellentesque a ornare libero. Aenean sed ipsum a lectus volutpat dictum non non
+              <h3>ABOUT ME</h3>
+							<hr>
+              <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis. Nam sem lacus, vulputate ut turpis vel, viverra porta ante. Pellentesque a ornare libero. Aenean sed ipsum a lectus volutpat dictum non non
                 neque. Nunc sit amet felis non velit consequat venenatis id eu dui.</p>
-              <p class="text-item">In congue eu dui sit amet euismod. Ut vehicula tellus nec laoreet congue. Mauris id eros ultricies, vulputate metus ac, euismod lorem.</p>
+              <p class="text-justify">In congue eu dui sit amet euismod. Ut vehicula tellus nec laoreet congue. Mauris id eros ultricies, vulputate metus ac, euismod lorem.</p>
             </div>
           </div>
 
@@ -93,7 +110,7 @@
 
           <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="space">
-              <h3>Skills</h3>
+              <h3>EXPERTISE</h3>
 
               <h5>HTML / CSS3</h5>
               <div class="progress progress-striped active">
@@ -110,7 +127,7 @@
                 <div class="progress-bar progress-bar-warning" style="width: 80%"></div>
               </div>
 
-              <h5>Hybrid App</h5>
+              <h5>Angular JS</h5>
               <div class="progress progress-striped active">
                 <div class="progress-bar progress-bar-defult" style="width: 70%"></div>
               </div>
@@ -136,7 +153,7 @@
     </div>
     <!-- end content -->
 
-    <div id="profile-contact" class="content">
+    <!--<div id="profile-contact" class="content">
       <div class="containers">
         <div class="row">
 
@@ -159,18 +176,46 @@
             </ul>
 
           </div>
-        </div>
-        <!-- .row -->
-      </div>
-      <!-- .containers -->
-    </div>
+        </div>-->
+        <!-- .row
+      </div>-->
+      <!-- .containers
+    </div> -->
 
-    <div id="services" class="content scrollable-section" data-section-title="Services">
+		<div id="count" class="content">
+			<div class="containers">
+				<div class="row">
+					<div class="col-md-12">
+
+						<div class="animated">
+							<div class="col-md-4 text-center">
+								<h2 class="hidden-xs"><i class="fa fa-child"></i></h2>
+								<h2><span class="count" data-from="0" data-to="27" data-speed="5000" data-refresh-interval="50"></span></h2>
+								<h4 class="text-weight">Customers</h4>
+							</div>
+							<div class="col-md-4 text-center">
+								<h2 class="hidden-xs"><i class="fa fa-laptop"></i></h2>
+								<h2><span class="count" data-from="0" data-to="56" data-speed="5000" data-refresh-interval="50"></span></h2>
+								<h4 class="text-weight">Completed Apps</h4>
+							</div>
+							<div class="col-md-4 text-center">
+								<h2 class="hidden-xs"><i class="fa fa-code"></i></h2>
+								<h2><span class="count" data-from="0" data-to="135923" data-speed="5000" data-refresh-interval="50"></span></h2>
+								<h4 class="text-weight">Line of Code</h4>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+    <div id="services" class="content">
       <div class="containers">
         <div class="row">
           <div class="col-md-12 headline">
-            <h2>What i can provide</h2>
-            <p>My Services</p>
+            <h2>WHAT I CAN</h2>
+						<hr>
           </div>
 
           <div class="col-md-12">
@@ -181,7 +226,7 @@
                   <div class="panel-body">
                     <div class="icon-item">
                       <i class="fa fa-code"></i>
-                      <h5>Clean code</h5>
+                      <h5>CLEAN CODE</h5>
                     </div>
                     <div class="text-item">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis. Nam sem lacus, vulputate ut turpis vel, viverra porta ante.</p>
@@ -195,7 +240,7 @@
                   <div class="panel-body">
                     <div class="icon-item">
                       <i class="fa fa-desktop"></i>
-                      <h5>Responsive UI</h5>
+                      <h5>RESPONSIVE UI</h5>
                     </div>
                     <div class="text-item">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis. Nam sem lacus, vulputate ut turpis vel, viverra porta ante.</p>
@@ -212,7 +257,7 @@
                   <div class="panel-body">
                     <div class="icon-item">
                       <i class="fa fa-cloud"></i>
-                      <h5>Cloud Development</h5>
+                      <h5>CLOUD DEVELOPMENT</h5>
                     </div>
                     <div class="text-item">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis. Nam sem lacus, vulputate ut turpis vel, viverra porta ante.</p>
@@ -226,7 +271,7 @@
                   <div class="panel-body">
                     <div class="icon-item">
                       <i class="fa fa-rocket"></i>
-                      <h5>Fast Performance</h5>
+                      <h5>FAST PERFORMANCE</h5>
                     </div>
                     <div class="text-item">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis. Nam sem lacus, vulputate ut turpis vel, viverra porta ante.</p>
@@ -245,40 +290,73 @@
       <!-- .containers -->
     </div>
 
-    <div id="count" class="content">
-      <div class="containers">
-        <div class="row">
-          <div class="col-md-12">
+		<div id="portfolio" class="content">
+			<div class="containers">
+				<div class="row">
+					<div class="col-md-12 headline">
+						<h2>RECENT WORK</h2>
+						<hr>
+					</div>
 
-            <div class="animated">
-              <div class="col-md-4 text-center">
-                <h2 class="hidden-xs"><i class="fa fa-child"></i></h2>
-                <h2><span class="count" data-from="0" data-to="27" data-speed="5000" data-refresh-interval="50"></span></h2>
-                <h4 class="text-weight">Customers</h4>
-              </div>
-              <div class="col-md-4 text-center">
-                <h2 class="hidden-xs"><i class="fa fa-laptop"></i></h2>
-                <h2><span class="count" data-from="0" data-to="56" data-speed="5000" data-refresh-interval="50"></span></h2>
-                <h4 class="text-weight">Completed Apps</h4>
-              </div>
-              <div class="col-md-4 text-center">
-                <h2 class="hidden-xs"><i class="fa fa-code"></i></h2>
-                <h2><span class="count" data-from="0" data-to="135923" data-speed="5000" data-refresh-interval="50"></span></h2>
-                <h4 class="text-weight">Line of Code</h4>
-              </div>
-            </div>
+					<div class="custom-grid col-md-12">
+						<figure class="cross-image animated">
+							<a class="my-project 1">
+								<img id="img-src-1" src="img/project_1.jpg" alt="Project 1" />
+								<figcaption>
+									<h2 id="img-title-1">Project 1</h2>
+									<p id="img-desc-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis.</p>
+									<p id="img-smdesc-1" class="hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis. Nam sem lacus, vulputate ut turpis vel, viverra porta ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero
+										ac accumsan lobortis. Nam sem lacus, vulputate ut turpis vel, viverra porta ante. </p>
+								</figcaption>
+							</a>
+						</figure>
 
-          </div>
-        </div>
-      </div>
-    </div>
+						<figure class="cross-image animated">
+							<a class="my-project 2">
+								<img id="img-src-2" src="img/project_2.jpg" alt="Project 2" />
+								<figcaption>
+									<h2 id="img-title-2">Project 2</h2>
+									<p id="img-desc-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis.</p>
+									<p id="img-smdesc-2" class="hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis. Nam sem lacus, vulputate ut turpis vel, viverra porta ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero
+										ac accumsan lobortis. Nam sem lacus, vulputate ut turpis vel, viverra porta ante. </p>
+								</figcaption>
+							</a>
+						</figure>
 
-    <div id="resume" class="content scrollable-section" data-section-title="Resume">
+						<figure class="cross-image animated">
+							<a class="my-project 3">
+								<img id="img-src-3" src="img/project_3.jpg" alt="Project 3" />
+								<figcaption>
+									<h2 id="img-title-3">Project 3</h2>
+									<p id="img-desc-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis.</p>
+									<p id="img-smdesc-3" class="hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis. Nam sem lacus, vulputate ut turpis vel, viverra porta ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero
+										ac accumsan lobortis. Nam sem lacus, vulputate ut turpis vel, viverra porta ante. </p>
+								</figcaption>
+							</a>
+						</figure>
+
+						<figure class="cross-image animated">
+							<a class="my-project 4">
+								<img id="img-src-4" src="img/project_4.jpg" alt="Project 4" />
+								<figcaption>
+									<h2 id="img-title-4">Project 4</h2>
+									<p id="img-desc-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis.</p>
+									<p id="img-smdesc-4" class="hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis. Nam sem lacus, vulputate ut turpis vel, viverra porta ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero
+										ac accumsan lobortis. Nam sem lacus, vulputate ut turpis vel, viverra porta ante. </p>
+								</figcaption>
+							</a>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+
+    <div id="resume" class="content">
       <div class="containers">
         <div class="row">
           <div class="col-md-12 headline">
-            <h2>Resume</h2>
-            <p>Education and experience</p>
+            <h2>RESUME</h2>
+            <hr>
           </div>
         </div>
         <!-- .row -->
@@ -447,99 +525,37 @@
       </div>
     </div>
 
-    <div id="portfolio" class="content scrollable-section" data-section-title="Portfolio">
+
+
+
+    <div id="contact" class="content">
       <div class="containers">
         <div class="row">
           <div class="col-md-12 headline">
-            <h2>Portfolio</h2>
-            <p>My Works</p>
-          </div>
-
-          <div class="custom-grid col-md-12">
-            <figure class="cross-image animated">
-              <a class="my-project 1">
-                <img id="img-src-1" src="img/project_1.jpg" alt="Project 1" />
-                <figcaption>
-                  <h2 id="img-title-1">Project 1</h2>
-                  <p id="img-desc-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis.</p>
-                  <p id="img-smdesc-1" class="hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis. Nam sem lacus, vulputate ut turpis vel, viverra porta ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero
-                    ac accumsan lobortis. Nam sem lacus, vulputate ut turpis vel, viverra porta ante. </p>
-                </figcaption>
-              </a>
-            </figure>
-
-            <figure class="cross-image animated">
-              <a class="my-project 2">
-                <img id="img-src-2" src="img/project_2.jpg" alt="Project 2" />
-                <figcaption>
-                  <h2 id="img-title-2">Project 2</h2>
-                  <p id="img-desc-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis.</p>
-                  <p id="img-smdesc-2" class="hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis. Nam sem lacus, vulputate ut turpis vel, viverra porta ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero
-                    ac accumsan lobortis. Nam sem lacus, vulputate ut turpis vel, viverra porta ante. </p>
-                </figcaption>
-              </a>
-            </figure>
-
-            <figure class="cross-image animated">
-              <a class="my-project 3">
-                <img id="img-src-3" src="img/project_3.jpg" alt="Project 3" />
-                <figcaption>
-                  <h2 id="img-title-3">Project 3</h2>
-                  <p id="img-desc-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis.</p>
-                  <p id="img-smdesc-3" class="hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis. Nam sem lacus, vulputate ut turpis vel, viverra porta ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero
-                    ac accumsan lobortis. Nam sem lacus, vulputate ut turpis vel, viverra porta ante. </p>
-                </figcaption>
-              </a>
-            </figure>
-
-            <figure class="cross-image animated">
-              <a class="my-project 4">
-                <img id="img-src-4" src="img/project_4.jpg" alt="Project 4" />
-                <figcaption>
-                  <h2 id="img-title-4">Project 4</h2>
-                  <p id="img-desc-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis.</p>
-                  <p id="img-smdesc-4" class="hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis. Nam sem lacus, vulputate ut turpis vel, viverra porta ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero
-                    ac accumsan lobortis. Nam sem lacus, vulputate ut turpis vel, viverra porta ante. </p>
-                </figcaption>
-              </a>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div id="contact" class="content scrollable-section" data-section-title="Contact">
-      <div class="containers">
-        <div class="row">
-          <div class="col-md-12 headline">
-            <h2>Contact</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit libero ac accumsan lobortis.</p>
-          </div>
+            <h2>LET'S WORK TOGETHER</h2>
+						<hr>
+            <p>I'm available for freelance opportunities.</p>
+					</div>
 
           <div class="col-md-12">
-            <form id="contact-form" class="animated">
-              <div class="form-group">
-                <label class="control-label" for="name">Name</label>
-                <input class="form-control" name="name" type="text" placeholder="Your name" id="name" required/>
-              </div>
+						<div class="col-md-6">
+							<a class="btn btn-default btn-lg" href="#">EMAIL ME</a>
+						</div>
 
-              <div class="form-group">
-                <label class="control-label" for="email">Email address</label>
-                <input class="form-control" name="email" placeholder="Your email" type="text" id="email" required/>
-              </div>
+						<div class="col-sm-6 animated">
+	            <ul class="icon">
+	              <li class="mail ">
+	                <p><a href="#">daivdsmith@gmail.com</a></p>
+	              </li>
+	              <li class="phone">
+	                <p>(8888) 8888-8888-8888</p>
+	              </li>
+	              <li class="location">
+	                <p>6666 Strawberry Lane Dorchester Center, MA 02124</p>
+	              </li>
+	            </ul>
 
-              <div class="form-group">
-                <label class="control-label" for="message">Message</label>
-                <textarea class="form-control" placeholder="Your message" name="message" rows="7" id="message" required></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary">
-								<i class="fa fa-bullhorn"></i> Send
-							</button>
-
-            </form>
-            <div class="ajax-response"></div>
+	          </div>
           </div>
         </div>
         <!-- .row -->
@@ -586,9 +602,8 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<script src="js/scrollreveal.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
-
   <script src="js/jquery.countTo.js"></script>
-  <script src="js/jquery.section-scroll.js"></script>
+	<script src="js/jquery.anchorScroll.min.js"></script>
   <script src="js/main.js"></script>
   <!-- end call script -->
 </body>

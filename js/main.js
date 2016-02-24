@@ -145,7 +145,7 @@
 
   //typed
   $(".element").typed({
-    strings: ["I'm Hybrid Developer", "I'm UI/UX Designer", "I'm Freelancer"],
+    strings: ["I'm Web Developer", "I'm Web Designer"],
     typeSpeed: 1,
     backSpeed: 1,
     backDelay: 1000,
@@ -153,7 +153,7 @@
   });
 
   $(".sub-title").typed({
-    strings: ["Hybrid Developer", "UI/UX Designer", "Freelancer"],
+    strings: ["Web Developer", "Web Designer"],
     typeSpeed: 1,
     backSpeed: 1,
     backDelay: 1400,
@@ -168,13 +168,16 @@
     handler: function() {
       $('.count').countTo();
     },
-    offset: 1000
+    offset: 500
   })
 
 
+  $('.anchor-scroll').anchorScroll({
+     scrollSpeed: 1000,
+     offsetTop: 0
+  });
 
 
-  $('body').sectionScroll();
 
   $(".my-project").on("click", function() {
     var $this = $(this);
@@ -235,5 +238,14 @@
   });
 
 window.sr = ScrollReveal().reveal('.animated');
+// Nav icon
+  $('#nav-icon').click(function() {
+    $(this).toggleClass('open');
+    $("#menu-overlay").toggleClass("menu-show");
+  });
+  $('.anchor-scroll').click(function() {
+    $('#nav-icon').removeClass('open');
+    $("#menu-overlay").removeClass("menu-show");
+  });
 
 })();
