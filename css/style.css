@@ -65,23 +65,7 @@ hr {
 
 /* To Navigation Style */
 
-.cross-top {
-  width: 100%;
-  z-index: 10000;
-}
 
-.cross-top a {
-  display: inline-block;
-  color: #fff;
-  -webkit-transform: translateY(20px);
-  transform: translateY(20px);
-}
-
-.cross-top .logo {
-  position: fixed;
-  left: 0;
-  padding: 0 32px;
-}
 
 .big-title {
   margin: 0 auto;
@@ -950,6 +934,28 @@ figure.cross-image:hover p {
   margin-left: 10px;
 }
 
+/*navbar*/
+.cross-top {
+  width: 100%;
+  z-index: 10000;
+}
+
+.cross-top a {
+  display: inline-block;
+  color: #fff;
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+}
+
+.cross-top .logo {
+  position: fixed;
+  left: 0;
+  padding: 0 32px;
+}
+
+/*nav again*/
+
+
 
 /*Media Query*/
 
@@ -992,6 +998,13 @@ figure.cross-image:hover p {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
   }
+	.containers {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+	}
+
   .cross-portfolio .content {
     width: 100%;
     margin-left: 0;

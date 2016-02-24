@@ -160,13 +160,15 @@
     loop: true
   });
 
+
+
   //reveal on scrool
   var waypoint = new Waypoint({
     element: document.getElementById('count'),
     handler: function() {
       $('.count').countTo();
     },
-    offset: 1000 
+    offset: 1000
   })
 
 
@@ -232,5 +234,6 @@
 
   });
 
+window.sr = ScrollReveal().reveal('.animated');
 
 })();
