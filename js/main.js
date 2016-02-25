@@ -1,11 +1,10 @@
 (function() {
   //preloader
   $(window).load(function() {
-
-    $('#preloader').delay(1300).slideUp('slow');
-
+    $('#preloader').delay(1300).fadeOut('slow');
   });
-  // detect if IE : from http://stackoverflow.com/a/16657946
+
+  // detect if IE
   var ie = (function() {
     var undef, rv = -1; // Return value assumes failure.
     var ua = window.navigator.userAgent;
@@ -20,11 +19,10 @@
       var rvNum = ua.indexOf('rv:');
       rv = parseInt(ua.substring(rvNum + 3, ua.indexOf('.', rvNum)), 10);
     }
-
     return ((rv > -1) ? rv : undef);
   }());
 
-  // disable/enable scroll (mousewheel and keys) from http://stackoverflow.com/a/4770179
+  // disable/enable scroll (mousewheel and keys)
   // left: 37, up: 38, right: 39, down: 40,
   // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
   var keys = [32, 37, 38, 39, 40],
@@ -143,7 +141,7 @@
     toggle('reveal');
   });
 
-  //typed
+  // Typed Js
   $(".element").typed({
     strings: ["I'm Web Developer", "I'm Web Designer"],
     typeSpeed: 1,
@@ -160,9 +158,18 @@
     loop: true
   });
 
+  // Navigation icon / hamburger
+  $('#nav-icon').click(function() {
+    $(this).toggleClass('open');
+    $("#menu-overlay").toggleClass("menu-show");
+  });
 
+  $('.anchor-scroll').click(function() {
+    $('#nav-icon').removeClass('open');
+    $("#menu-overlay").removeClass("menu-show");
+  });
 
-  //reveal on scrool
+  // Reveal on scrool
   var waypoint = new Waypoint({
     element: document.getElementById('count'),
     handler: function() {
@@ -171,81 +178,31 @@
     offset: 500
   })
 
-
+  // Anchor smooth scroll
   $('.anchor-scroll').anchorScroll({
-     scrollSpeed: 1000,
-     offsetTop: 0
+    scrollSpeed: 1000,
+    offsetTop: 0
   });
 
-
-
-  $(".my-project").on("click", function() {
-    var $this = $(this);
-    var img, title, desc, smdesc;
-
-    if ($this.hasClass('1')) {
-
-      img = $('#img-src-1');
-      title = $("#img-title-1");
-      desc = $("#img-desc-1");
-      smdesc = $("#img-smdesc-1");
-
-    }
-    if ($this.hasClass('2')) {
-
-      img = $('#img-src-2');
-      title = $("#img-title-2");
-      desc = $("#img-desc-2");
-      smdesc = $("#img-smdesc-2");
-
-    }
-    if ($this.hasClass('3')) {
-
-      img = $('#img-src-3');
-      title = $("#img-title-3");
-      desc = $("#img-desc-3");
-      smdesc = $("#img-smdesc-3");
-
-    }
-    if ($this.hasClass('4')) {
-
-      img = $('#img-src-4');
-      title = $("#img-title-4");
-      desc = $("#img-desc-4");
-      smdesc = $("#img-smdesc-4");
-
-    }
-
-    $('#show-img').attr('src', img.attr('src'));
-    $('#show-title').text(title.text());
-    $('#show-desc-1').text(desc.text());
-    $('#show-desc-2').text(smdesc.text());
-    $('#projectModal').modal({
-      backdrop: 'static',
-      keyboard: false
-    });
-
-  });
-
+  // OwlCarousel slider for testimonial
   $(".carousel-inner").owlCarousel({
-
     navigation: false,
     slideSpeed: 300,
     paginationSpeed: 400,
     singleItem: true,
     autoPlay: 3000
-
   });
 
-window.sr = ScrollReveal().reveal('.animated');
-// Nav icon
-  $('#nav-icon').click(function() {
-    $(this).toggleClass('open');
-    $("#menu-overlay").toggleClass("menu-show");
-  });
-  $('.anchor-scroll').click(function() {
-    $('#nav-icon').removeClass('open');
-    $("#menu-overlay").removeClass("menu-show");
+  // Run ScrollReveal
+  window.sr = ScrollReveal().reveal('.animated');
+
+  // Google Map load -- change to your address
+  $('.gmap').mobileGmap({
+    markers: [{
+      position: 'center',
+      info: '121 S Pinckney St',
+      showInfo: true
+    }]
   });
 
 })();
