@@ -551,6 +551,10 @@ ul.menu-click {
   min-height: 400px;
 }
 
+.gmap_image img {
+  max-width: 100%;
+}
+
 .text-weight {
   font-weight: 600;
   text-transform: uppercase;
@@ -681,7 +685,7 @@ ul.menu-click {
   transition: opacity 0.2s ease-out;
 }
 
-.cross-portfolio.modify div.content:nth-child(odd) {  /* Change div content color odd */
+.cross-portfolio.modify div.content:nth-child(odd) { /* Change div content color odd */
   opacity: 1;
   background: #f3f3f3;
   -webkit-transition: opacity 0.6s ease-in;
@@ -1175,17 +1179,21 @@ body.modal-open .cross-portfolio {
   .cross-portfolio {
     font-size: 90%;
   }
+
   .cross-portfolio .content {
     width: 95%;
     margin-left: 5%;
     padding: 2em 2em 2em 0;
   }
+
   .cross-portfolio.modify .cross-top .logo {
     opacity: 0;
   }
+
   .cross-portfolio .bg-img::after {
     width: 95%;
   }
+
   figure {
     display: inline-block;
     float: none;
@@ -1203,35 +1211,44 @@ body.modal-open .cross-portfolio {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
   }
+
   .containers {
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
   }
+
   .cross-portfolio.modify .cross-top .logo {
     opacity: 0;
   }
+
   .cross-portfolio .content {
     width: 100%;
     margin-left: 0;
     padding: 2em 2em 2em 0;
   }
+
   .cross-portfolio .content p {
     font-size: 14px;
   }
+
   .cross-portfolio .title h1 {
     font-size: 38px;
   }
+
   .cross-portfolio .content h2 {
     font-size: 28px;
   }
+
   .cross-portfolio .content h3 {
     font-size: 24px;
   }
+
   .cross-portfolio .content h4 {
     font-size: 18px;
   }
+  
   .menu-click li a {
     font-size: 40px;
     line-height: 68px;
