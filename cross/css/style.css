@@ -467,7 +467,7 @@ ul.menu-click {
 .big-title p {
   color: #fff;
   padding: 0 0 0.6em;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 2.25em;
   margin: 0 auto;
 }
@@ -655,11 +655,11 @@ ul.menu-click {
 .cross-portfolio .bg-img::before {
   width: 100%;
   height: 100%;
-  background-color: rgba(85, 79, 79, 0.44);
+  background-color: rgba(79, 77, 77, 0.44);
 }
 
 .cross-portfolio.modify .bg-img::before {
-  background-color: rgba(75, 62, 97, 0.4);
+  background-color: rgba(97, 62, 63, 0.4);
 }
 
 .cross-portfolio .title h1 {
