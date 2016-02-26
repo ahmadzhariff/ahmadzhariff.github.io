@@ -128,7 +128,7 @@
   var pageScroll = scrollY();
   noscroll = pageScroll === 0;
 
-  disable_scroll();
+  
 
   if (pageScroll) {
     isRevealed = true;
