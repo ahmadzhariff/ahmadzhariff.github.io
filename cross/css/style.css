@@ -33,32 +33,6 @@ a:focus {
   color: inherit;
 }
 
-ul.icon {
-  list-style-type: none;
-}
-
-ul.icon li {
-  text-indent: -1.4em;
-}
-
-ul.icon li:before {
-  font-family: 'FontAwesome';
-  float: left;
-  width: 1.4em;
-}
-
-ul.icon li.mail:before {
-  content: "\f0e0";
-}
-
-ul.icon li.phone:before {
-  content: "\f095";
-}
-
-ul.icon li.location:before {
-  content: "\f041";
-}
-
 hr {
   margin: 18px 0;
   background-color: transparent;

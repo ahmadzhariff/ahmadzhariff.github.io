@@ -1,7 +1,7 @@
 (function() {
   //preloader
   $(window).load(function() {
-    $('#preloader').delay(1300).fadeOut('slow');
+    $('#preloader').delay(1000).fadeOut('slow');
   });
 
   // detect if IE
@@ -164,7 +164,7 @@
     $("#menu-overlay").toggleClass("menu-show");
   });
 
-  $('.anchor-scroll').click(function() {
+  $('.smooth-scroll').click(function() {
     $('#nav-icon').removeClass('open');
     $("#menu-overlay").removeClass("menu-show");
   });
@@ -178,10 +178,9 @@
     offset: 500
   })
 
-  // Anchor smooth scroll
-  $('.anchor-scroll').anchorScroll({
-    scrollSpeed: 1000,
-    offsetTop: 0
+  // Smooth scroll
+  smoothScroll.init({
+    speed: 1000
   });
 
   // OwlCarousel slider for testimonial
