@@ -1,0 +1,576 @@
+@media (max-width: 1023px) {
+
+.grid li{
+  width: 100%;
+  margin: 0 0 15px 0;
+  display: block;
+}
+
+.grid li img {
+	float: none;
+}
+
+.grid li .text {
+	opacity: 1;
+	position: static;
+	background: rgba(255, 255, 255, .8);
+	padding: 20px 0;
+	margin-bottom: 20px;
+}
+
+.grid li p {
+	color: #333;
+}
+
+.grid li .text .v-align-html {
+    position: static;
+    -webkit-transform: inherit;
+    -ms-transform: inherit;
+    transform: inherit;
+ }
+
+.work-heading p.title.narrower {
+  width: 85% !important;
+}
+
+.portfolio .portfolio-margin h1, .about-us h1 {
+	margin-top: 60px;
+}
+
+.about-us p.title {
+	width: 90%;
+}
+
+.about-us p.title br {
+	display: none;
+ }
+
+.about-us .column-one, .about-us .column-two {
+	margin-bottom: 20px;
+}
+
+.about-us .column-three {
+	margin-bottom: 0;
+}
+
+.grid {
+	margin-bottom: 60px;
+}
+
+.contact {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.grid p.description {
+	margin-top: 10px;
+}
+
+}
+
+/* iPad (portrait) */
+@media (min-width: 320px) and (max-width: 680px) {
+
+.menu{
+  display:none;
+}
+
+.menu-click li a {
+   font-size: 30px;
+   line-height: 70px;
+}
+
+.menu-media{
+  display:block;
+}
+
+.start-page .content {
+  width:300px;
+  height:100%;
+}
+
+.start-page .content .text {
+  width:300px;
+}
+
+.anchor-scroll.sm {
+  display: inline-block;
+}
+
+.anchor-scroll.sm .arrow-down {
+  margin: 30px auto 0 auto !important;
+  -webkit-animation: initial;
+  -moz-animation: initial;
+  -o-animation: initial;
+  animation: initial;
+}
+
+.arrow-down.bg {
+  display: none;
+}
+
+.work-heading p.title.narrower {
+  width: 85% !important;
+}
+
+
+.about-us p.title {
+  width: 90%;
+}
+
+
+h1 {
+  font-size:36px;
+}
+
+.about-us .content{
+  width:300px;
+}
+
+.about-us hr,.portfolio .portfolio-margin hr, .contact hr {
+  width:106px;
+}
+
+.about-us .column-one, .about-us .column-two{
+  width:300px;
+  margin-bottom:0;
+  margin-top: 0;
+}
+
+.about-us .column-three {
+  margin-top: 0;
+}
+
+
+ .about-us .content .column-three{
+  width:300px;
+ }
+
+.portfolio .portfolio-margin{
+  width: 80%;
+}
+
+
+.grid p {
+	font-size: 15px;
+}
+
+.grid p.description {
+	font-size: 12px;
+}
+
+.partners .content{
+  width:300px;
+}
+
+.partners .logo {
+  width:300px;
+}
+
+.partners .logo img {
+  width:80px;
+  padding-bottom:20px;
+}
+
+.contact, .contact .content, .contact .content .form{
+  width: 90%;
+}
+
+.contact .content .contact-text{
+  padding-left:0px;
+  width: 80%;
+  text-align:center;
+  margin-top:60px;
+}
+
+
+.work-item .content, .work-heading .content {
+   width: 80%;
+}
+
+.start-page .content .text .logo {
+  margin: 0 auto !important;
+}
+
+
+.start-page .content .text .logo img {
+  width: 50%;
+}
+
+.start-page h1 {
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.start-page p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.work-heading h1 {
+   font-size: 26px;
+}
+
+.work-heading p.title {
+  line-height: 30px;
+  letter-spacing: .04em;
+  font-size: 18px !important;
+  margin-top: 30px;
+  width: 100% !important;
+}
+
+.work-heading p.title.narrow {
+  width: 70%;
+}
+
+
+.demo h2 {
+  font-size: 26px;
+}
+
+#nav-icon {
+  top: 25px;
+  right: 25px;
+  width: 35px;
+  height: 28px;
+}
+
+input{
+  width:320px;
+}
+
+textarea{
+  width:320px;
+}
+
+.contact .content .contact-text {
+  width:275px;
+}
+
+.contact .content .form .column, .contact .content .form .column-3{
+  width:320px;
+}
+
+.contact .content .form .column-2{
+  width:320px;
+  padding-left:0;
+}
+
+
+.contact{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.work-item .content, .work-heading .content, .demo .content {
+   width: 80%;
+}
+
+.col-2 .column-one, .col-2 .column-two {
+	width: 100% !important;
+	padding: 0 !important;
+	float: none !important;
+}
+
+.col-2 .column-two {
+	margin-top: 0 !important;
+}
+
+.popup {
+	max-width: 250px;
+	font-size: 22px;
+}
+
+.prettyprint code {
+	padding-left: 0 !important;
+}
+
+.logo-mrg {
+  margin-top: 0;
+}
+
+.footer{
+  position:relative;
+}
+
+}
+
+
+
+/* iPad (portrait) */
+@media (min-width: 580px) and (max-width: 767px) {
+
+.menu{
+  display:none;
+}
+
+.menu-click li a {
+   font-size: 30px;
+   line-height: 70px;
+}
+
+.menu-media{
+  display:block;
+}
+
+.menu-media .menu-content{
+  width:540px;
+}
+
+.partners .logo img {
+  padding-bottom:20px;
+}
+
+.start-page .content {
+  width:70%;
+  height:100%;
+}
+
+.start-page, .start-page .opacity{
+  height:100%;
+}
+
+.start-page .content .text .logo{
+  margin: 0 auto !important;
+}
+
+
+h1 {
+  font-size:36px;
+}
+
+.about-us p.title {
+  width: 100%;
+}
+
+.about-us .content{
+  width:70%;
+}
+
+.about-us hr,.portfolio .portfolio-margin hr, .contact hr {
+  width:106px;
+}
+
+.about-us .column-one, .about-us .column-two{
+  width:300px;
+  margin-bottom:20px;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+
+ .about-us .column-three{
+  width:300px;
+  margin-left: auto;
+  margin-right: auto;
+  float: none; }
+
+.portfolio .portfolio-margin{
+  width: 70%;
+}
+
+
+.partners .content{
+  width:400px;
+}
+
+.partners .logo {
+  width:400px;
+}
+
+.partners .logo img {
+  width:80px;
+  padding-bottom:20px;
+}
+
+.contact, .contact .content, .contact .content .form{
+  width:300px;
+}
+
+.contact .content .contact-text{
+  padding-left:0px;
+  width:300px;
+  text-align:center;
+  margin-top:60px;
+}
+
+.contact .content .contact-text {
+  width:275px;
+}
+
+.contact .content .form .column, .contact .content .form .column-3{
+  width:420px;
+}
+
+.contact .content .form .column-2{
+  width:420px;
+  padding-left:0;
+}
+
+.contact{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.work-item .content, .work-heading .content, .demo .content {
+   width: 70%;
+}
+
+.work-heading h1 {
+   font-size: 34px;
+}
+
+.work-heading p.title {
+	font-size: 18px !important;
+	line-height: 30px;
+	margin-top: 30px;
+  width: 100% !important;
+}
+
+.work-heading p.title.narrow {
+  width: 70%;
+}
+
+
+.col-2 .column-one, .col-2 .column-two {
+	width: 100% !important;
+	padding: 0 !important;
+	float: none !important;
+}
+
+.col-2 .column-two {
+	margin-top: 0 !important;
+}
+
+
+.popup {
+	max-width: 350px;
+	font-size: 32px;
+}
+
+.prettyprint code {
+	padding-left: 0 !important;
+}
+
+.logo-mrg {
+  margin-top: 0;
+}
+
+.footer{
+  position:relative;
+}
+
+input{
+  width:420px;
+}
+
+textarea{
+  width:420px;
+}
+
+
+}
+
+
+/* iPad (portrait) */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+
+
+.menu-content .logo{
+  width:200px;
+}
+
+.menu-content{
+  width:700px;
+}
+
+
+.start-page .content .text .logo{
+  margin: 0 auto !important;
+}
+
+
+.about-us .content{
+  width:700px;
+}
+
+.about-us p{
+  width:200px;
+}
+
+.about-us h2{
+  letter-spacing:2px;
+}
+
+.about-us .column-one{
+  width:233px;
+}
+
+.about-us .column-two{
+  width:233px;
+}
+
+.about-us .column-three{
+  width:233px;
+}
+
+.portfolio .portfolio-margin {
+  width: 70%;
+}
+
+.partners .content{
+  width:700px;
+}
+
+.partners .logo {
+  width:700px;
+}
+
+.contact{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact .content {
+  width:700px
+}
+
+.footer{
+  position:relative;
+}
+
+.contact .content .form{
+  width:355px;
+}
+
+.work-item .content, .work-heading .content, .demo .content {
+   width: 70%;
+}
+
+
+
+input{
+  width:320px;
+}
+
+textarea{
+  width:320px;
+}
+
+.contact .content .contact-text {
+  width:275px;
+}
+
+.contact .content .form .column, .contact .content .form .column-3{
+  width:450px;
+}
+
+.contact .content .form .column-2{
+  width:450px;
+  padding-left:0;
+}
+
+
+}
