@@ -985,11 +985,8 @@ body.modal-open .cross-portfolio {
     margin: 10px auto;
     width: 100%;
   }
-  h2, .h2 {
-    font-size:30px;
-  }
-  h5, .h5 {
-    font-size: 17px
+  #count .h2{
+    font-size: 30px;
   }
 }
 
@@ -1019,11 +1016,8 @@ body.modal-open .cross-portfolio {
     margin: 10px auto;
     width: 100%;
   }
-  h2, .h2 {
-    font-size:46px;
-  }
-  h5, .h5 {
-    font-size: 20px
+  #count .h2{
+    font-size: 20px;
   }
 }
 
