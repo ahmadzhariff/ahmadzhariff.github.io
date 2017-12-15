@@ -1,0 +1,16 @@
+body {
+   background-image: url("../../images/bg.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+@media screen and (max-width: 1280px){
+    #main{
+        margin-left: 0%;
+    }
+}
+
+ #main{
+        margin-left: 0%;
+    }
