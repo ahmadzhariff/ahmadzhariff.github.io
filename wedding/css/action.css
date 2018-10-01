@@ -1,0 +1,210 @@
+[class~=new-comment] [class~=emoji-picker-container],
+[class~=sticky-action] {
+    width: 100%;
+}
+[class~=sticky-action] {
+    box-shadow: 0 -.0625pc 3pt rgba(0, 0, 0, .23);
+}
+[class~=sticky-action] {
+    background-color: #313232;
+}
+[class~=sticky-action] {
+    position: fixed;
+}
+[class~=sticky-action] {
+    bottom: 0;
+}
+[class~=sticky-action] {
+    margin-left: auto;
+}
+[class~=sticky-action] [class~=row],
+[class~=sticky-action] {
+    margin-bottom: 0;
+}
+[class~=sticky-action] [class~=row] {
+    margin-left: 0;
+}
+[class~=sticky-action] {
+    margin-right: auto;
+}
+[class~=sticky-action] [class~=row],
+[class~=sticky-action] {
+    margin-top: 0;
+}
+[class~=sticky-action] {
+    left: 0;
+}
+[class~=sticky-action] [class~=row] {
+    margin-right: 0;
+}
+[class~=sticky-action] {
+    right: 0;
+}
+.sticky-action .each-action span.text,
+[class~=sticky-action] [class~=each-action-with-link] span[class~=text] {
+    color: #fff;
+}
+[class~=sticky-action] {
+    max-width: 4.166666667in;
+}
+[class~=sticky-action],
+[class~=sticky-action] [class~=each-action] {
+    padding-left: 0;
+}
+[class~=sticky-action],
+[class~=action-type] ul li a span[class~=text] {
+    font-weight: 400;
+}
+.sticky-action .each-action span.text,
+[class~=sticky-action] [class~=each-action-with-link] span[class~=text],
+[class~=new-comment] [class~=emoji-picker-container] [class~=comment-input] {
+    text-align: left;
+}
+[class~=sticky-action] [class~=each-action],
+[class~=sticky-action] [class~=each-action-with-link] {
+    padding-bottom: .4375pc;
+}
+[class~=sticky-action] {
+    padding-bottom: 5px;
+}
+[class~=sticky-action] [class~=each-action],
+[class~=sticky-action] [class~=each-action-with-link],
+[class~=sticky-action] {
+    padding-right: 0;
+}
+[class~=sticky-action] [class~=each-action-with-link] span[class~=text],
+.sticky-action .each-action span.text {
+    padding-left: .3125pc;
+}
+[class~=sticky-action] {
+    padding-top: 5px;
+}
+[class~=icon-group] [class~=icon] p,
+.sticky-action .each-action span.text {
+    font-size: .75pc;
+}
+.sticky-action .each-action span.text {
+    line-height: .125in;
+}
+[class~=sticky-action] [class~=each-action],
+[class~=sticky-action] [class~=each-action-with-link] {
+    padding-top: .4375pc;
+}
+[class~=sticky-action] {
+    z-index: 10;
+}
+[class~=sticky-action] [class~=each-action] {
+    text-align: center;
+}
+.sticky-action .each-action:nth-child(2) {
+    border-right-width: .010416667in;
+}
+.sticky-action .each-action:nth-child(2) {
+    border-right-style: solid;
+}
+[class~=sticky-action] [class~=each-action-with-link] {
+    padding-left: 0;
+}
+[class~=sticky-action] {
+    font-style: normal;
+}
+.sticky-action .each-action:nth-child(2) {
+    border-right-color: rgba(255, 255, 255, .2);
+}
+.sticky-action .each-action:nth-child(2) {
+    border-image: none;
+}
+.sticky-action .each-action:nth-child(2) {
+    border-left-width: .0625pc;
+}
+.sticky-action .each-action:nth-child(2) {
+    border-left-style: solid;
+}
+.sticky-action .each-action:nth-child(2) {
+    border-left-color: rgba(255, 255, 255, .2);
+}
+[class~=sticky-action] [class~=each-action] [class~=action],
+[class~=sticky-action] [class~=each-action-with-link] [class~=action],
+[class~=action-type],
+[class~=action-type] ul {
+    margin-bottom: 0;
+}
+[class~=sticky-action] [class~=each-action-with-link] span[class~=text],
+[class~=wedding-card] [class~=fifth-page] ul[class~=comments] li p[class~=comment-reply] {
+    font-size: .75pc;
+}
+[class~=sticky-action] [class~=each-action-with-link]:nth-child(2) {
+    border-right-width: .010416667in;
+}
+[class~=sticky-action] [class~=each-action-with-link] span[class~=text] {
+    line-height: .125in;
+}
+[class~=sticky-action] [class~=each-action-with-link]:nth-child(2) {
+    border-right-style: solid;
+}
+[class~=sticky-action] [class~=each-action-with-link]:nth-child(2) {
+    border-right-color: rgba(255, 255, 255, .2);
+}
+[class~=sticky-action] [class~=each-action-with-link]:nth-child(2) {
+    border-image: none;
+}
+
+[class~=sticky-action] [class~=each-action-with-link] [class~=action],
+[class~=first-page][class~=typo_1] [class~=wedding-person] p[class~=with],
+[class~=action-type],
+[class~=sticky-action] [class~=each-action] [class~=action] {
+    margin-right: auto;
+}
+
+[class~=sticky-action] [class~=each-action] [class~=action],
+[class~=action-type] ul,
+[class~=sticky-action] [class~=each-action-with-link] [class~=action],
+[class~=action-type] {
+    margin-top: 0;
+}
+[class~=sticky-action] [class~=each-action-with-link]:nth-child(2) {
+    border-left-width: .0625pc;
+}
+[class~=sticky-action] [class~=each-action-with-link] {
+    text-align: center;
+}
+[class~=sticky-action] [class~=each-action-with-link]:nth-child(2) {
+    border-left-style: solid;
+}
+[class~=sticky-action] [class~=each-action-with-link]:nth-child(2) {
+    border-left-color: rgba(255, 255, 255, .2);
+}
+[class~=sticky-action] [class~=each-action] [class~=action],
+[class~=sticky-action] [class~=each-action-with-link] [class~=action] {
+    display: table;
+}
+[class~=sticky-action] [class~=each-action] [class~=action],
+[class~=sticky-action] [class~=each-action-with-link] [class~=action] {
+    margin-left: auto;
+}
+[class~=sticky-action] [class~=each-action-with-link] [class~=action],
+[class~=sticky-action] [class~=each-action] [class~=action] {
+    width: 80%;
+}
+[class~=sticky-action] [class~=each-action] a,
+[class~=sticky-action] [class~=each-action-with-link] a {
+    color: #000;
+}
+[class~=sticky-action] [class~=each-action] img,
+[class~=sticky-action] [class~=each-action-with-link] img {
+    width: .260416667in;
+}
+[class~=sticky-action] [class~=each-action-with-link] img,
+[class~=sticky-action] [class~=each-action] span,
+[class~=sticky-action] [class~=each-action] img,
+[class~=sticky-action] [class~=each-action-with-link] span {
+    display: table-cell;
+}
+
+[class~=sticky-action] [class~=each-action-with-link] img,
+[class~=sticky-action] [class~=each-action] span,
+[class~=action-type] ul li a img,
+[class~=sticky-action] [class~=each-action] img,
+[class~=sticky-action] [class~=each-action-with-link] span {
+    vertical-align: middle;
+}
